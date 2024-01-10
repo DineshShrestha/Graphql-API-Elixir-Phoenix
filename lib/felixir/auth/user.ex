@@ -19,7 +19,7 @@ defmodule Felixir.Auth.User do
     |> unique_constraint(:email)
     |> unique_constraint(:username)
     |> validate_length(:username, min: 4, max: 30)
-    |> validate_length(:name, min: 8, max: 30)
+    |> validate_length(:name, min: 3, max: 30)
     |> validate_length(:password, min: 8, max: 30)
   end
 end
